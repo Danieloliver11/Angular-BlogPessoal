@@ -1,7 +1,22 @@
 #img-bg{
-    background-image: url("../../assets/img/teclado_bg.jpg");
+    background-image: url("../../assets/img/livro.jpg");
     min-height: 695px; /*impede que o valor usado da propriedade height se torne menor que o valor especificado para min-height.*/
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     }
+
+#img-bg2{
+    background-image: url("../../assets/img/papiro.jpg");
+    min-height: 695px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+input{
+    background-color: rgba(255, 255, 255, 0.303);
+}
+select{
+    background-color: rgba(255, 255, 255, 0.303);
+
+}

@@ -5,3 +5,9 @@ background-position: center;
 background-repeat: no-repeat;
 background-size: cover;
 }
+#bg-2{
+    background-color: rgb(236, 235, 236);
+}
+input{
+    background-color: rgba(231, 226, 236, 0.639);
+}

@@ -4,6 +4,12 @@
 a{
     cursor: pointer;
 }
+p{
+    color: rgb(254, 254, 254);
+}
+.sair:hover{
+color: rgb(231, 7, 7);
+}
 
 .nuvens{
     background-image: url("src/assets/img/nuve3.jpg");
