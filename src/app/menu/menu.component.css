@@ -4,8 +4,17 @@
 a{
     cursor: pointer;
 }
+
 .nuvens{
     background-image: url("src/assets/img/nuve3.jpg");
-    background-size: cover;
-    background-position:30px -5px;
 }
+/*
+    .   nuvens{
+        background-image: url("src/assets/img/nuve3.jpg");
+        background-size: cover; preenche todo os espaco
+        background-repeat: no-repeat;  para nao repitir
+        background-position: center; para ficar no centro
+
+        background-position:30px -5px;
+    }
+*/

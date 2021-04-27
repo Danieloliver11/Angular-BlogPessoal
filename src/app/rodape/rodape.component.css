@@ -9,7 +9,7 @@ list-style: none;
 /*ajusta o tamanho dos icones das redes sociais*/
 .fa{
     font-size: 35pt;
-    color: aliceblue;
+    color: rgb(23, 91, 151);
     padding: 10px;
 }
 .fa-facebook-official:hover{
@@ -26,6 +26,4 @@ list-style: none;
 
 .nuvens{
     background-image: url("src/assets/img/nuve3.jpg");
-    background-size: cover;
-    background-position:30px -5px;
 }
