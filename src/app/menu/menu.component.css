@@ -1,0 +1,11 @@
+.fs-16{
+    font-size: 16pt;
+}
+a{
+    cursor: pointer;
+}
+.nuvens{
+    background-image: url("src/assets/img/nuve3.jpg");
+    background-size: cover;
+    background-position:30px -5px;
+}
