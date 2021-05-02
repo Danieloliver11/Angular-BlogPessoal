@@ -19,7 +19,7 @@
               <input [(ngModel)]='userLogin.senha' name="senha" type="password" class="form-control" id="senhas" placeholder="Digite sua senha">
 
               <div class="d-flex justify-content-center mt-4 mb-4">
-                <button type="submit" class="btn btn-dark" >Entrar</button>
+                <button type="submit" class="btn btn-dark" (click)='entrar()'>Entrar</button>
               </div>
             </div>
           </form>
