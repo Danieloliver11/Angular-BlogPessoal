@@ -10,6 +10,9 @@ p{
 .sair:hover{
 color: rgb(231, 7, 7);
 }
+.fundonavi{
+    background-color: black;
+}
 
 .nuvens{
     background-image: url("src/assets/img/nuve3.jpg");

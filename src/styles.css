@@ -4,3 +4,6 @@
 *{
     font-family: 'Press Start 2P', cursive;
 }
+html{
+    scroll-behavior: smooth;
+}

@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-lg navbar-dark nuvens">
+<nav class="navbar navbar-expand-lg navbar-dark fundonavi nuvens">
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#conteudoNavbarSuportado"
         aria-controls="conteudoNavbarSuportado" aria-expanded="false" aria-label="Alterna navegação">
         <span class="navbar-toggler-icon"></span>
@@ -7,11 +7,11 @@
     <div class="collapse navbar-collapse" id="conteudoNavbarSuportado">
         <ul class="navbar-nav ml-5 d-flex align-items-center">
             <li class="nav-item active">
-                <img src="../assets/img/eu.png" alt="imagem do user" width="50px" height="50px"
+                <img src="{{foto}}" alt="imagem do user" width="50px" height="50px"
                     class="img-fluid rounded-circle">
             </li>
             <li class="nav-item pl-3 ">
-                <p class=" m-0 font-weight-bold  fs-16">Nome do usuario</p>
+                <p class=" m-0 font-weight-bold  fs-16">Olá {{nome}}</p>
             </li>
             <li class="nav-item pl-3 ">
                 <a href="">
@@ -23,7 +23,7 @@
 
         <ul class="navbar-nav ml-auto d-flex align-items-center">
             <li class="nav-item pl-5 ">
-                <a class=" m-0 font-weight-bold text-white fs-16"> <span class="sair"> Sair</span><i class="fa fa-sign-out"></i></a>
+                <a (click)="sair()" class=" m-0 font-weight-bold text-white fs-16"> <span class="sair"> Sair</span><i class="fa fa-sign-out"></i></a>
             </li>
 
         </ul>
