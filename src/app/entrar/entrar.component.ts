@@ -17,6 +17,8 @@ export class EntrarComponent implements OnInit {
   private router:Router) { }
 
   ngOnInit() {
+    console.log(" aqui no inicio token",environment.token)
+
     window.scroll(0,0)
   }
    entrar(){

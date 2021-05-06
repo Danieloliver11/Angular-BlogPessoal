@@ -12,11 +12,12 @@ export class InicioComponent implements OnInit {
     private router : Router //
   ) { }
 
-  ngOnInit() {
-/*     if(environment.token == ''){
+
+ngOnInit() {
+     if(environment.token == ''){
       this.router.navigate(['/entrar'])
       alert("Você saiu da sua conta!")
-    }  */
+    }  
   }
 
 }
