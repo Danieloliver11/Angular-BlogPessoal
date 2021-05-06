@@ -15,7 +15,11 @@ color: rgb(231, 7, 7);
 }
 
 .nuvens{
-    background-image: url("src/assets/img/nuve3.jpg");
+background-color: black;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
 }
 /*
     .   nuvens{

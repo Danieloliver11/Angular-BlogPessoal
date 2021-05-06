@@ -2,9 +2,39 @@
     font-size: 54pt;
 }
 .fs-18{
-    font-size: 18pt;
+    font-size: 20pt;
 }
 .arrumar{
     /*margin-left: 400px;*/
     margin-top: 20px;
 } 
+.bg-1{
+    background-image: url('../../assets/img/cidade.gif');
+    background-size: cover;
+}
+
+h1{
+    color: rgb(207, 148, 216);
+    -webkit-text-stroke-width: 3px;
+    -webkit-text-stroke-color: #000;
+	text-shadow: #000 2px 3px 2px;
+}
+p{
+    color: rgb(207, 148, 216);
+    -webkit-text-stroke-width:1px;
+    -webkit-text-stroke-color: #000;
+    text-shadow: #000 2px 3px 2px;
+}
+button:hover{
+background-color: ;
+}
+button{
+    background-color: ;
+}
+.bbb{
+    margin: 10px;
+    padding: auto;
+}
+.bbc{
+ padding-right:28px;
+}

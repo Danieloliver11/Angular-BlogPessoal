@@ -1,22 +1,65 @@
-#img-bg{
-    background-image: url("../../assets/img/livro.jpg");
-    min-height: 695px; /*impede que o valor usado da propriedade height se torne menor que o valor especificado para min-height.*/
+.bgg{
+    background-image: url("../../assets/img/livrog.gif");
+    min-height: 800px; /*impede que o valor usado da propriedade height se torne menor que o valor especificado para min-height.*/
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     }
+    
+    input{
+        background-color: rgba(231, 226, 236, 0.173);
+    }
+    ::placeholder{
+        color :rgb(245, 220, 195);
+    }
+    h1 {
+        color: rgb(209, 95, 80)  ;
+        -webkit-text-stroke-width: 3px;
+        -webkit-text-stroke-color: #000;
+        text-shadow: #000 2px 3px 2px;
+    }
+    label{
+      color: rgb(245, 220, 195);
+      -webkit-text-stroke-width:1px;
+        -webkit-text-stroke-color: #000;
+        text-shadow: #000 2px 3px 2px;
+        ;
+    }
+    button{
+        -webkit-text-stroke-width:1px;
+        -webkit-text-stroke-color: #000;
+        text-shadow: #000 2px 5px 2px;
+        background-color: blueviolet
+        ;
+    }
+    button:hover{
+        background-color: rgb(164, 24, 119);
+    }
+    p{
+        color: rgb(245, 220, 195);
+        -webkit-text-stroke-width:1px;
+        -webkit-text-stroke-color: #000;
+        text-shadow: #000 5px 2px 2px;
+        font-size: 15pt;
+    
+    }
+    a{
+        -webkit-text-stroke-width:1px;
+        -webkit-text-stroke-color: #000;
+        text-shadow: #000 2px 5px 2px;
+        font-size: 15pt;
+        margin-left: 10px;
+    }  
+    a:hover{
+        color: crimson;
+        -webkit-text-stroke-width:1px;
+        -webkit-text-stroke-color: #000;
+        text-shadow: #000 2px 5px 2px;
+    }
+    select{
+        background-color: rgba(231, 226, 236, 0.173);
+        color :rgb(245, 220, 195);
 
-#img-bg2{
-    background-image: url("../../assets/img/papiro.jpg");
-    min-height: 695px;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-input{
-    background-color: rgba(255, 255, 255, 0.303);
-}
-select{
-    background-color: rgba(255, 255, 255, 0.303);
 
-}
+    }
+    
