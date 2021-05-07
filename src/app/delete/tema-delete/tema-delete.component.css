@@ -1,8 +1,6 @@
-.bg-fundo{
-    background-image: url('../../assets/img/auau.gif');
-    background-size: 100% 150%;
-    background-position:bottom;
-    
+.bg{
+    background-image: url('../../../assets/img/gatinhoN.gif');
+    background-repeat: no-repeat;
 }
 h1{
     color: rgb(207, 147, 216)  ;
@@ -10,9 +8,9 @@ h1{
     -webkit-text-stroke-color: #000;
 	text-shadow: #000 2px 3px 8px;
 }
-h5{
+h4{
     color: rgb(207, 147, 216)  ;
     -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: #000;
-	text-shadow: #000 2px 3px 8px;
+    -webkit-text-stroke-color: rgb(0, 0, 0);
+	text-shadow: #000 2px 3px 8px
 }
