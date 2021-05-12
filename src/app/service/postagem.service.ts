@@ -29,8 +29,9 @@ export class PostagemService {
   putPostagem(postagem:Postagem):Observable<Postagem>{
     return this.htpp.put<Postagem>('http://localhost:8080/postagem', postagem , this.token)
   }
-  delete(id:number){
-    this.htpp.delete(`http://localhost:8080/postagem/${id}`, this.token)
+  deletePostagem(id:number){
+   return this.htpp.delete(`http://localhost:8080/postagem/${id}`, this.token)
   }
+  
 
 }
