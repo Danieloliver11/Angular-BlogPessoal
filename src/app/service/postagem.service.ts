@@ -20,8 +20,17 @@ export class PostagemService {
   getAllPostagem():Observable<Postagem[]>{
     return this.htpp.get<Postagem[]>('http://localhost:8080/postagem',this.token)
   }
+  getByIdPostagem(id: number):Observable<Postagem>{
+    return this.htpp.get<Postagem>(`http://localhost:8080/postagem/${id}`,this.token)
+  }
   postPostagem(postagem:Postagem):Observable<Postagem>{
     return this.htpp.post<Postagem>('http://localhost:8080/postagem', postagem,this.token)
+  }
+  putPostagem(postagem:Postagem):Observable<Postagem>{
+    return this.htpp.put<Postagem>('http://localhost:8080/postagem', postagem , this.token)
+  }
+  delete(id:number){
+    this.htpp.delete(`http://localhost:8080/postagem/${id}`, this.token)
   }
 
 }
