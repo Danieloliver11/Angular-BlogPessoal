@@ -18,10 +18,10 @@ idTema: number
     ) { }
 
   ngOnInit(){
-   /*  if(environment.token == ''){
+    if(environment.token == ''){
       this.router.navigate(['/entrar'])
       alert("Você saiu da sua conta!")
-    } */
+    } 
     this.idTema = this.route.snapshot.params['id']
     this.findAllByTema(this.idTema)
     
