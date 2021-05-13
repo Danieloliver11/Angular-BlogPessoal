@@ -31,4 +31,11 @@ export class AuthService {
    }
    return estaLogado
   }
+  adm(){
+    let estadoAdm: boolean = false
+    if(environment.tipo == "adm"){
+      estadoAdm = true
+    }
+    return estadoAdm
+  }
 }

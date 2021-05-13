@@ -49,6 +49,7 @@ ngOnInit() {
       this.router.navigate(['/entrar'])
       alert("Você saiu da sua conta!")
     }
+ 
     this.getAllTemas() 
     this.getTodasPostagem()
 

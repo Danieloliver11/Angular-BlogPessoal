@@ -3,6 +3,7 @@ import { Router } from '@angular/router';
 import { observable, Subscriber } from 'rxjs';
 import { environment } from 'src/environments/environment.prod';
 import { Tema } from '../model/Tema';
+import { AlertasService } from '../service/alertas.service';
 import { TemaService } from '../service/tema.service';
 
 @Component({
@@ -19,13 +20,18 @@ export class TemaComponent implements OnInit {
 
 
   constructor(private router: Router,
-    private temaservice: TemaService
+    private temaservice: TemaService,
+    private alerta: AlertasService
     ) { }
 
   ngOnInit() {
    if(environment.token == ''){
       this.router.navigate(['/entrar'])
       alert("Você saiu da sua conta!")
+    }
+    if(environment.tipo != 'adm'){
+      this.router.navigate(['/inicio'])
+      this.alerta.showAlertInfo("Você não é administrador!")
     }
     this.findAllTemas()// dando conflito? na hora de dar o f5 GET http://localhost:8080/tema 401
   }
