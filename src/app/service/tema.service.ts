@@ -20,6 +20,9 @@ getAllTema():Observable<Tema[]>{
 getByIdTema(id:number):Observable<Tema>{
   return this.http.get<Tema>(`http://localhost:8080/tema/${id}`, this.token)
 }
+getByNomeTema(descricao:string):Observable<Tema[]>{
+  return this.http.get<Tema[]>(`http://localhost:8080/tema/nome/${descricao}`, this.token)
+}
 postTema(tema:Tema):Observable<Tema>{
   return this.http.post<Tema>('http://localhost:8080/tema', tema, this.token)
 }

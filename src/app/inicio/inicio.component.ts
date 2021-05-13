@@ -29,6 +29,9 @@ export class InicioComponent implements OnInit {
   user: User= new User()
   idUser  = environment.id
 
+  tituloPost: string
+  nomeTema: string
+
   key = 'date'
   reverse = true  
 
@@ -46,11 +49,11 @@ ngOnInit() {
       this.router.navigate(['/entrar'])
       alert("Você saiu da sua conta!")
     }
-    this.getAllTema() 
+    this.getAllTemas() 
     this.getTodasPostagem()
 
   }
-getAllTema(){
+getAllTemas(){
   return this.temaservice.getAllTema().subscribe((resp :Tema[])=>{
     this.listsTemas = resp
   })
@@ -88,7 +91,28 @@ publicar(){
     this.postagem = new Postagem()
     this.getTodasPostagem()
   })
+}  
+findbyTituloPostagem(){
+  if(this.tituloPost ==''){
+    this.getTodasPostagem()
+  } else{
+    this.postagemservice.getByTituloPostagem(this.tituloPost).subscribe((resp: Postagem[])=>{
+      this.listaPostagem = resp
+      })
+  }
+  
 }
+findbyNomeTemas(){
+  if(this.nomeTema == ''){
+    this.getAllTemas()
+  }else{
+    this.temaservice.getByNomeTema(this.nomeTema).subscribe((resp: Tema[])=>{
+      this.listsTemas = resp 
+    })
+  }
+
+}
+
 
   
 }

@@ -46,7 +46,17 @@
   </nav>
   <div class="tab-content texto" id="nav-tabContent">
       <div class="tab-pane fade show active" id="todasPostagens" role="tabpanel" aria-labelledby="nav-todasPostagens-tab">
-        <!-- todas as postagens -->
+       
+        <!-- input de procura -->
+        <div class="row d-flex justify-content-center mb-5 mt-5">
+          <div class="col-md-4">
+            <div class="form-group">
+              <input type="text" class="form-control" id="titulo" placeholder="Digite um titulo de postagem para pesquisar" [(ngModel)]='tituloPost' (keyup)='findbyTituloPostagem()'>
+            </div>
+          </div>
+        </div>
+        <!--/ -->
+        <!-- todas as postagens --> 
           <div class="card-columns">
             <div class="card text-center m-2" *ngFor='let item of listaPostagem | orderBy : key : reverse'>
               <div class="card-body">
@@ -62,6 +72,7 @@
       </div>
       <div class="tab-pane fade" id="minhasPostagens" role="tabpanel" aria-labelledby="nav-minhasPostagens-tab">
 <!-- minhas postagens  -->
+
           <div class="card-columns">
             <div class="card text-center m-2" *ngFor='let item of user.postagem | orderBy : key : reverse'>
               <div class="card-body">
@@ -76,10 +87,21 @@
             </div>
           </div>
       </div>
+
+     
       
       <div class="tab-pane fade" id="postagemTema" role="tabpanel" aria-labelledby="nav-postagemTema-tab">
 
+         <!-- input de procura -->
+          <div class="row d-flex justify-content-center mb-5 mt-5">
+            <div class="col-md-4">
+              <div class="form-group">
+                <input type="text" class="form-control" id="tema" placeholder="Digite um titulo de postagem para pesquisar" [(ngModel)]='nomeTema' (keyup)='findbyNomeTemas()'>
+              </div>
+            </div>
+          </div>
           <div class="card-columns" *ngFor='let tema of listsTemas | orderBy : key : reverse'>
+            
             <div class="card text-center m-2" *ngFor='let item of tema.postagem | orderBy : key : reverse'>
               <div class="card-body">
                 <h5 class="card-title m-0">{{item.titulo}}</h5>

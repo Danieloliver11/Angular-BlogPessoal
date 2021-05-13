@@ -25,12 +25,12 @@ p{
     -webkit-text-stroke-color: #000;
     text-shadow: #000 2px 3px 2px;
 }
-button:hover{
+/* button:hover{
 background-color: ;
 }
 button{
     background-color: ;
-}
+} */
 .bbb{
     margin: 10px;
     padding: auto;
